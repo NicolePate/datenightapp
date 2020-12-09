@@ -1,0 +1,81 @@
+body {
+    background: rgb(143,88,227);
+    background: radial-gradient(circle, rgba(143,88,227,1) 0%, rgba(77,59,193,1) 100%);
+    
+}
+header {
+    color:white;
+    font-family: 'Nerko One', cursive;
+    text-align: center;
+    font-size: 100px;
+  }
+
+
+img{
+    text-align: center;
+    width: 55%;
+    height: 50%;
+    border-radius: 50%
+}
+
+
+#movieSection{
+  
+    width: 50%;
+    text-align: center;
+    float: left;
+    color:white;
+    font-family: 'Nerko One', cursive;
+}
+#drinkSection{
+  
+    width: 50%;
+    float: right;
+    text-align: center;
+    color:white;
+    font-family: 'Nerko One', cursive;
+}
+
+  
+.navbar {
+    width: auto;
+    margin-top: 25px;
+    text-align: right;
+    box-shadow: 0 8px 6px -1px rgb(57, 30, 113);
+    
+  }
+  
+  .navbar a {
+    /* float: center; */
+    font-size: 30px;
+    color: white;
+    font-family: 'Nerko One', cursive;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+
+  .refresh{
+    display: flex;
+    height: 75px;
+    width: 200px;
+    border-radius: 12px;
+    color:white;
+    font-family: 'Nerko One', cursive;
+    background-color: aqua;
+    color: white;
+    font-size: 30px;
+  }
+  
+  h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 10px;
+    color: white;
+    font-family: 'Nerko One', cursive;
+  }
+
+  h4{
+      font-size: small;
+  }

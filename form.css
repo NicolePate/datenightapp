@@ -1,0 +1,48 @@
+#updateUserForm {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    text-align: center;
+}
+input {
+    border-style: solid;
+    border-color: black;
+    color: black;
+    font-size: 16px;
+    padding: 10px 14px;
+    text-align: left;
+    margin: 4px 2px;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+input:focus:-moz-placeholder {
+    color: transparent;
+}
+input:focus::-moz-placeholder {
+    color: transparent;
+}
+input:focus:-ms-input-placeholder {
+    color: transparent;
+}
+
+/*Just place them in a container and change direction*/
+#button_container{
+display:flex;
+}
+a,
+button {
+    border: none;
+    color: white;
+    background-color: blue;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    display: inline-block;
+    align-self: flex-start;
+    cursor: pointer;
+    text-transform: uppercase;
+}
