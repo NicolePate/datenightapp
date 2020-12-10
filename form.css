@@ -16,14 +16,14 @@ body {
     /* float: center; */
     font-size: 30px;
     color: white;
-    font-family: 'Nerko One', cursive;
+    font-family: 'Quicksand', sans-serif;
     padding: 14px 16px;
     text-decoration: none;
     
   }
 
 .comment-post {
-    font-family: 'Nerko One', cursive;
+    font-family: 'Quicksand', sans-serif;
     margin-top: 20px;
     margin-left: 20px;
     color: white;
@@ -53,7 +53,7 @@ body {
     width: 150px;
     border-radius: 12px;
     color:white;
-    font-family: 'Nerko One', cursive;
-    background-color: aqua;
+    font-family: 'Quicksand', sans-serif;
+    background-color:rgb(237, 198, 69);
     font-size: 30px;
   }
