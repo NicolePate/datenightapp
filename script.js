@@ -92,7 +92,7 @@ window.onload = () => {
         
         console.log(data.results[i]);
         let movieFavs = data.results[i];
-        // let movieSection = document.getElementById("movieSection");
+        
         
         let movieName = document.createElement("h2");
         movieName.innerHTML = data.results[i].original_title;
@@ -101,6 +101,10 @@ window.onload = () => {
         let img = document.createElement("img");
         img.src ="https://image.tmdb.org/t/p/original" + movieFavs.poster_path;
         movieSection.appendChild(img)
+
+        let info = document.createElement("h4");
+        info.innerHTML = data.results[i].overview;
+        movieSection.appendChild(info)
     }
     }
     

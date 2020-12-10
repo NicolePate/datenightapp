@@ -1,48 +1,59 @@
-#updateUserForm {
-    display: flex;
-    flex-direction: column;
-}
-label {
-    text-align: center;
-}
-input {
-    border-style: solid;
-    border-color: black;
-    color: black;
-    font-size: 16px;
-    padding: 10px 14px;
-    text-align: left;
-    margin: 4px 2px;
-}
-input:focus::-webkit-input-placeholder {
-    color: transparent;
-}
-input:focus:-moz-placeholder {
-    color: transparent;
-}
-input:focus::-moz-placeholder {
-    color: transparent;
-}
-input:focus:-ms-input-placeholder {
-    color: transparent;
+body {
+    background: rgb(143,88,227);
+    background: radial-gradient(circle, rgba(143,88,227,1) 0%, rgba(77,59,193,1) 100%);
+    
 }
 
-/*Just place them in a container and change direction*/
-#button_container{
-display:flex;
-}
-a,
-button {
-    border: none;
+.navbar {
+    width: auto;
+    margin-top: 25px;
+    text-align: right;
+    box-shadow: 0 8px 6px -1px rgb(57, 30, 113);
+    
+  }
+  
+  .navbar a {
+    /* float: center; */
+    font-size: 30px;
     color: white;
-    background-color: blue;
-    padding: 12px 16px;
-    text-align: center;
+    font-family: 'Nerko One', cursive;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    display: inline-block;
-    align-self: flex-start;
-    cursor: pointer;
-    text-transform: uppercase;
-}
+    
+  }
+
+.comment-post {
+    font-family: 'Nerko One', cursive;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .comment-style {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 75%;
+    background-color: rgb(177, 97, 216);
+    padding: 10px;
+    border-radius: 12px;
+  }
+  
+  textarea {
+    width: 90%;
+    display: block;
+    margin-left: 20px;
+  }
+  
+  #submit-btn {
+    margin-top: 30px;
+    margin-left: 25px;
+    height: 55px;
+    width: 150px;
+    border-radius: 12px;
+    color:white;
+    font-family: 'Nerko One', cursive;
+    background-color: aqua;
+    font-size: 30px;
+  }

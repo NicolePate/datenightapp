@@ -1,15 +1,39 @@
-<div class="form2">
-    <div class="message" hidden></div>
-   <form id="updateUserForm" action="https://someaction.com" method="POST">
-      <label class="userInfo"></label>
-      <input type="text" name="userFirstName" class="userFirstName" placeholder="First Name">
-      <input type="text" name="userLastName" class="userLastName" placeholder="Last Name">
-      <input type="text" name="subTag" class="subTag" placeholder="Title, benefits, companies, expertise">
-      <input type="text" name="subLocation" class="subLocation" placeholder="City, state, zipe code or country">
-      <!--Just place them in a container and change direction -->
-      <div id="button_container"> 
-      <a href="./manage.html" class="cancelLink">Cancel</a>
-      <button type="submit " class="updateButton">Reactivate</button>
-      <div>
-    </form>
-  </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="form.css">
+    <title>DATE NIGHT IN</title>
+</head>
+
+<body>
+  <nav>
+    <div class="navbar">
+          <div class="one"></div>
+          <a href = "index.html">HOME</a>
+          <a href = "form.html">FEEDBACK</a> 
+          <a href = "faq.html">FAQ</a> 
+        </div>
+      </div> 
+    </div>
+          </nav>
+<p class="comment-post">
+  Comment Section:  
+</p>
+
+<div class="posted-comment">
+</div>
+
+<textarea rows="4" cols="50" name="comment" form="usrform" id="comment" placeholder="Share your thoughts....." required>
+</textarea>
+
+
+
+<button id = "submit-btn" class="btn btn-warning btn-md">Submit</button>
+</body>
+<script src="form.js"></script> 
+</html>
