@@ -146,13 +146,13 @@ window.onload = () => {
       img_meal.src = data.meals[0].strMealThumb;
       mealSection.appendChild(img_meal)
   
-      let ingredient = document.createElement("h3")
-      ingredient.innerHTML = data.meals[0].strIngredient1;
-      mealInformation.appendChild(ingredient)
+      let mealIngredient = document.createElement("h3")
+      mealIngredient.innerHTML = data.meals[0].strIngredient1;
+      mealInformation.appendChild(mealIngredient)
   
-      let ingredient2 = document.createElement("h3")
+      let mealIngredient2 = document.createElement("h3")
       ingredient2.innerHTML = data.meals[0].strIngredient2;
-      mealInformation.appendChild(ingredient2)
+      mealInformation.appendChild(mealIngredient2)
   
       let mealIngredient3 = document.createElement("h3")
       mealIngredient3.innerHTML = data.meals[0].strIngredient3;
@@ -166,6 +166,7 @@ window.onload = () => {
       mealIngredient5.innerHTML = data.meals[0].strIngredient5;
       mealInformation.appendChild(mealIngredient5)
   
+      
       let mealInstructions = document.createElement("h4")
       mealInstructions.innerHTML = data.meals[0].strInstructions;
       mealInformation.appendChild(mealInstructions)
