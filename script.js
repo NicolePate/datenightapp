@@ -110,8 +110,6 @@ window.onload = () => {
   }
   
 
-  // https://www.themealdb.com/api/json/v1/1/random.php
-
   function getRandomMeal(){
     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
     .then(
@@ -135,7 +133,7 @@ window.onload = () => {
     getRandomMeal();
 
     function displayRandomMeal(data){
-    //  console.log(data.meals[0]);
+    console.log(data.meals[0]);
   
       let mealSection = document.getElementById("mealSection");
       let mealInformation = document.getElementById("mealInformation")
@@ -144,9 +142,9 @@ window.onload = () => {
       mealName.innerHTML = data.meals[0].strMeal;
       mealSection.appendChild(mealName);
     
-      let img = document.createElement("img");
-      img.src = data.meals[0].strMealThumb;
-      mealSection.appendChild(img)
+      let img_meal = document.createElement("img");
+      img_meal.src = data.meals[0].strMealThumb;
+      mealSection.appendChild(img_meal)
   
       let ingredient = document.createElement("h3")
       ingredient.innerHTML = data.meals[0].strIngredient1;
@@ -156,20 +154,19 @@ window.onload = () => {
       ingredient2.innerHTML = data.meals[0].strIngredient2;
       mealInformation.appendChild(ingredient2)
   
-      let ingredient3 = document.createElement("h3")
-      ingredient3.innerHTML = data.meals[0].strIngredient3;
-      mealInformation.appendChild(ingredient3)
+      let mealIngredient3 = document.createElement("h3")
+      mealIngredient3.innerHTML = data.meals[0].strIngredient3;
+      mealInformation.appendChild(mealIngredient3)
   
-      let ingredient4 = document.createElement("h3")
-      ingredient4.innerHTML = data.meals[0].strIngredient4;
-      mealInformation.appendChild(ingredient4)
+      let mealIngredient4 = document.createElement("h3")
+      mealIngredient4.innerHTML = data.meals[0].strIngredient4;
+      mealInformation.appendChild(mealIngredient4)
   
-      let ingredient5 = document.createElement("h3")
-      ingredient5.innerHTML = data.meals[0].strIngredient5;
-      mealInformation.appendChild(ingredient5)
+      let mealIngredient5 = document.createElement("h3")
+      mealIngredient5.innerHTML = data.meals[0].strIngredient5;
+      mealInformation.appendChild(mealIngredient5)
   
-      let instructions = document.createElement("h4")
-      instructions.innerHTML = data.meals[0].strInstructions;
-      mealInformation.appendChild(instructions)
-  
+      let mealInstructions = document.createElement("h4")
+      mealInstructions.innerHTML = data.meals[0].strInstructions;
+      mealInformation.appendChild(mealInstructions)
     }
