@@ -1,109 +1,136 @@
 body {
-    /* background: rgb(143,88,227);
-    background: radial-gradient(circle, rgba(143,88,227,1) 0%, rgba(77,59,193,1) 100%); */
-    background: rgb(99,97,218);
-    background: linear-gradient(90deg, rgba(99,97,218,1) 0%, rgba(123,110,180,1) 50%);
-    
+  background-image: url("popcorn.jpg");  
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 header {
-    color:white;
-    /* font-family: 'Nerko One', cursive; */
-    font-family: 'Quicksand', sans-serif;
-    font-style: bold;
-    text-align: center;
-    font-size: 90px;
-    padding-top: 50px;
-  }
+  color:white;
+ font-family: 'Nerko One', cursive; 
+  font-family: 'Quicksand', sans-serif;
+  font-style: bold;
+  text-align: center;
+  font-size: 90px;
+  padding-top: 50px;
+}
 
 
 img{
-    text-align: center;
-    width: 65%;
-    height: 60%;
-    border-radius: 5%;
+  text-align: center;
+  width: 80%;
+  height: 75%;
+  border-radius: 5%;
 }
 
+#drinkSection{
+  background-color: hsla(0,0%,100%,.4);
+  float: left;
+  width: 50%;
+  height: 410px;
+  overflow: scroll;
+  text-align: center;
+  color:black;
+  font-family: 'Nerko One', cursive;
+}
+
+#drinkInformation{
+  background-color: hsla(0,0%,100%,.4);
+  width: 50%;
+  height: 410px;
+  overflow: scroll;
+  text-align: left;
+  color:black;
+  font-family: 'Quicksand', sans-serif;
+}
 
 #movieSection{
-  
-    width: 50%;
-    text-align: center;
-    float: left;
-    color:white;
-    font-family: 'Nerko One', cursive;
-}
-#drinkSection{
-  
-    width: 50%;
-    float: right;
-    text-align: center;
-    color:white;
-    font-family: 'Nerko One', cursive;
+  background-color: hsla(0,0%,100%,.4);
+  float: left;
+  width: 50%;
+  height: 410px;
+  overflow: scroll;
+  text-align: center;
+  color:black;
+  font-family: 'Quicksand', sans-serif;
 }
 
-  
+#mealSection{
+  background-color: hsla(0,0%,100%,.4);
+  float: left;
+  width: 50%;
+  height: 410px;
+  overflow: scroll;
+  text-align: center;
+  color:black;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#mealInformation{
+  background-color: hsla(0,0%,100%,.4);
+  width: 50%;
+  height: 410px;
+  overflow: scroll;
+  text-align: left;
+  color:black;
+  font-family: 'Quicksand', sans-serif;
+}
+
+#aboutMovie{
+  background-color: hsla(0,0%,100%,.4);
+  width: 50%;
+  height: 410px;
+  overflow: scroll;
+  text-align: left;
+  color:black;
+  font-family: 'Quicksand', sans-serif;
+}
+
 .navbar {
-    width: auto;
-    height: 50px;
-    text-align: right;
-    background-color: rgb(237, 198, 69);
-    padding-top: 2%;
-  }
-  
-  .navbar a {
-    /* float: center; */
-    font-size: 30px;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    padding-left:  16px;
-
-    text-decoration: none;
-    background-color: rgb(237, 198, 69);
-    
-  }
-#button{
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
+  width: auto;
+  height: 50px;
+  text-align: right;
+  /* /* background-color: rgb(237, 198, 69);  */
+  background-color: rgb(233, 41, 41);
+  background-image: url("reel.png");
+  padding-top: 2%;
 }
 
-  .refresh{
-    height: 75px;
-    width: 250px;
-    border-radius: 12px;
-    color:white;
-    /* font-family: 'Nerko One', cursive; */
-    font-family: 'Quicksand', sans-serif;
-    background-color: rgb(237, 198, 69);
-    font-size: 30px;
-  }
+.left{
+  background-image: url("reel.png");
 
-  h2{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 30px;
-    padding-left: 10%;
-      padding-right: 0%;
-   
-  }
-  h3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 70px;
-    padding-right: 70px;
-    font-size: 20px;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-  }
 
-  h4{
-      font-family: 'Quicksand', sans-serif;
-      padding-left: 30%;
-      padding-right: 30%;
-      font-size: 15px;
-  }
-  .faq-section{
-    font-size: 30px;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    }
+}
+.navbar a {
+  font-size: 30px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  padding-left:  16px;
+  text-decoration: none;
+  background-color: rgb(233, 41, 41);
+}
+
+#button{
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+ .refresh{
+  height: 75px;
+  width: 250px;
+  border-radius: 12px;
+  color:white;
+  font-family: 'Nerko One', cursive; 
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgb(237, 198, 69); 
+  background-color: rgb(233, 41, 41);
+  font-size: 30px;
+} 
+
+h2{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+  padding-left: 10%;
+  padding-right: 0%;
+}
