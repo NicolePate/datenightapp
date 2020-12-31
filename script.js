@@ -135,7 +135,7 @@ window.onload = () => {
     getRandomMeal();
 
     function displayRandomMeal(data){
-     console.log(data.meals[0]);
+    //  console.log(data.meals[0]);
   
       let mealSection = document.getElementById("mealSection");
       let mealInformation = document.getElementById("mealInformation")
