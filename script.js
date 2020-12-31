@@ -62,54 +62,6 @@ window.onload = () => {
       instructions.innerHTML = data.drinks[0].strInstructions;
       drinkInformation.appendChild(instructions)
   }
-  
-  function getRandomMovie(){
-  fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=f3930e1fb202ee5fc8fb9be5c56b8e9c&language=en-US&page=1')
-  .then(
-      function(response) {
-        if (response.status !== 200) {
-          console.log('Looks like there was a problem. Status Code: ' +
-            response.status);
-          return;
-        }
-        response.json().then(function(data) {
-           console.log(data);
-          displayRandomMovie(data);
-        })
-      }
-    )
-    .catch(function(err) {
-      console.log('Fetch Error :-S', err);
-    });
-  }
-  
-  getRandomMovie();
-  
-  function displayRandomMovie(data){
-      let results = data.results;
-      let i = Math.floor(Math.random() * results.length);
-      let movieSection = document.getElementById("movieSection");
-      let aboutMovie = document.getElementById("aboutMovie")
-      
-      console.log(data.results[i]);
-      let movieFavs = data.results[i];
-      
-      
-      let movieName = document.createElement("h2");
-      movieName.innerHTML = data.results[i].original_title;
-      movieSection.appendChild(movieName);
-  
-      let img = document.createElement("img");
-      img.src ="https://image.tmdb.org/t/p/original" + movieFavs.poster_path;
-      movieSection.appendChild(img)
-
-      let info = document.createElement("h3");
-      info.innerHTML = data.results[i].overview;
-      aboutMovie.appendChild(info)
-  }
-  }
-  
-
   function getRandomMeal(){
     fetch('https://www.themealdb.com/api/json/v1/1/random.php')
     .then(
@@ -170,3 +122,52 @@ window.onload = () => {
       mealInstructions.innerHTML = data.meals[0].strInstructions;
       mealInformation.appendChild(mealInstructions)
     }
+    
+  function getRandomMovie(){
+  fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=f3930e1fb202ee5fc8fb9be5c56b8e9c&language=en-US&page=1')
+  .then(
+      function(response) {
+        if (response.status !== 200) {
+          console.log('Looks like there was a problem. Status Code: ' +
+            response.status);
+          return;
+        }
+        response.json().then(function(data) {
+           console.log(data);
+          displayRandomMovie(data);
+        })
+      }
+    )
+    .catch(function(err) {
+      console.log('Fetch Error :-S', err);
+    });
+  }
+  
+  getRandomMovie();
+  
+  function displayRandomMovie(data){
+      let results = data.results;
+      let i = Math.floor(Math.random() * results.length);
+      let movieSection = document.getElementById("movieSection");
+      let aboutMovie = document.getElementById("aboutMovie")
+      
+      console.log(data.results[i]);
+      let movieFavs = data.results[i];
+      
+      
+      let movieName = document.createElement("h2");
+      movieName.innerHTML = data.results[i].original_title;
+      movieSection.appendChild(movieName);
+  
+      let img = document.createElement("img");
+      img.src ="https://image.tmdb.org/t/p/original" + movieFavs.poster_path;
+      movieSection.appendChild(img)
+
+      let info = document.createElement("h3");
+      info.innerHTML = data.results[i].overview;
+      aboutMovie.appendChild(info)
+  }
+  }
+  
+
+  
