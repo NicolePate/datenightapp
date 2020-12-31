@@ -92,15 +92,9 @@ img{
   text-align: right;
   /* /* background-color: rgb(237, 198, 69);  */
   background-color: rgb(233, 41, 41);
-  background-image: url("reel.png");
   padding-top: 2%;
 }
 
-.left{
-  background-image: url("reel.png");
-
-
-}
 .navbar a {
   font-size: 30px;
   color: white;
