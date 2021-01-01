@@ -124,7 +124,7 @@ window.onload = () => {
     }
     
   function getRandomMovie(){
-  fetch('https://api.themoviedb.org/3/trending/movie/week?api_key={process.env.API_KEY}')
+  fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=')
   .then(
       function(response) {
         if (response.status !== 200) {
