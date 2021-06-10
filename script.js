@@ -1,4 +1,10 @@
+
+
+
+
 window.onload = () => {
+
+
 
   function getRandomCocktail(){
   fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
@@ -122,9 +128,16 @@ window.onload = () => {
       mealInstructions.innerHTML = data.meals[0].strInstructions;
       mealInformation.appendChild(mealInstructions)
     }
-    
+
+
+    require('dotenv').config();
+    const db = require('db')
+db.connect({
+  password: process.env.MY_API_TOKEN}
+})
+
   function getRandomMovie(){
-  fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=')
+  fetch('https://api.themoviedb.org/3/trending/movie/week?api_key={process.env=MY_API_TOKEN}')
   .then(
       function(response) {
         if (response.status !== 200) {
