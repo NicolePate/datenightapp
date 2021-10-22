@@ -130,14 +130,14 @@ window.onload = () => {
     }
 
 
-    require('dotenv').config();
-    const db = require('db')
-db.connect({
-  password: process.env.MY_API_TOKEN}
-})
+//     require('dotenv').config();
+//     const db = require('db')
+// db.connect({
+//   password: process.env.MY_API_TOKEN}
+// })
 
   function getRandomMovie(){
-  fetch('https://api.themoviedb.org/3/trending/movie/week?api_key={process.env=MY_API_TOKEN}')
+  fetch('https://api.themoviedb.org/3/trending/movie/week?api_key=f3930e1fb202ee5fc8fb9be5c56b8e9c&language=en-US&page=1')
   .then(
       function(response) {
         if (response.status !== 200) {
