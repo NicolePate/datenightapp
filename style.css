@@ -18,8 +18,8 @@ header {
 
 img{
   text-align: center;
-  width: 300px;
-  height: 300px;
+  width: 380px;
+  height: 380px;
   border-radius: 5%;
 }
 #side1{
@@ -28,20 +28,20 @@ img{
   padding-bottom: 30px;
 }
 #drinkSection{
-  background-color: hsla(0,0%,100%,.4);
+  background-color: rgba(225, 221, 221, 0.4);
   float: left;
   width: 50%;
-  height: 410px;
-  overflow: scroll;
+  height: 480px;
+  /* overflow: scroll; */
   text-align: center;
   color:black;
   font-family: 'Nerko One', cursive;
 }
 
 #drinkInformation{
-  background-color: hsla(0,0%,100%,.4);
+  background-color: rgba(225, 221, 221, 0.4);
   width: 50%;
-  height: 410px;
+  height: 480px;
   overflow: scroll;
   text-align: left;
   color:black;
@@ -49,31 +49,31 @@ img{
 }
 
 #movieSection{
-  background-color: hsla(0,0%,100%,.4);
+  background-color: rgba(225, 221, 221, 0.4);
   float: left;
   width: 50%;
-  height: 410px;
-  overflow: scroll;
+  height: 480px;
+  /* overflow: scroll; */
   text-align: center;
   color:black;
   font-family: 'Quicksand', sans-serif;
 }
 
 #mealSection{
-  background-color: hsla(0,0%,100%,.4);
+  background-color: rgba(225, 221, 221, 0.4);
   float: left;
   width: 50%;
-  height: 410px;
-  overflow: scroll;
+  height: 480px;
+  /* overflow: scroll; */
   text-align: center;
   color:black;
   font-family: 'Quicksand', sans-serif;
 }
 
 #mealInformation{
-  background-color: hsla(0,0%,100%,.4);
+  background-color: rgba(225, 221, 221, 0.4);
   width: 50%;
-  height: 410px;
+  height: 480px;
   overflow: scroll;
   text-align: left;
   color:black;
@@ -81,9 +81,9 @@ img{
 }
 
 #aboutMovie{
-  background-color: hsla(0,0%,100%,.4);
+  background-color: rgba(225, 221, 221, 0.4);
   width: 50%;
-  height: 410px;
+  height: 480px;
   overflow: scroll;
   text-align: left;
   color:black;
