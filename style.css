@@ -6,15 +6,22 @@ body {
    background-size: cover;
 }
 header {
-  color:white;
- font-family: 'Nerko One', cursive; 
-  font-family: 'Quicksand', sans-serif;
-  font-style: bold;
-  text-align: center;
-  font-size: 90px;
-  /* padding-top: 30px; */
+color:white;
+font-family: 'Nerko One', cursive; 
+font-family: 'Quicksand', sans-serif;
+font-style: bold;
+text-align: center;
+font-size: 90px;
+letter-spacing: 2px;
 }
 
+h1 {
+  color: white;
+  size: 30px;
+  letter-spacing: 2px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+}
 
 img{
   text-align: center;
@@ -120,8 +127,7 @@ img{
   border-radius: 12px;
   color:white;
   font-family: 'Nerko One', cursive; 
-  font-family: 'Quicksand', sans-serif;
-  background-color: rgb(237, 198, 69); 
+  font-family: 'Quicksand', sans-serif; 
   background-color: rgb(233, 41, 41);
   font-size: 30px;
 } 
@@ -129,6 +135,6 @@ img{
 h2{
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
-  padding-left: 10%;
+  /* padding-left: 10%; */
   padding-right: 0%;
 }
