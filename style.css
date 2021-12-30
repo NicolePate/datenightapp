@@ -1,5 +1,6 @@
 body {
-  background-image: url("popcorn.jpg");  
+  /* background-image: url("popcorn.jpg");   */
+  background-color: black;
    height: 100%;
    background-position: center;
    background-repeat: no-repeat;
@@ -75,6 +76,7 @@ img{
   text-align: center;
   color:black;
   font-family: 'Quicksand', sans-serif;
+  
 }
 
 #mealInformation{
@@ -137,4 +139,10 @@ h2{
   font-size: 30px;
   /* padding-left: 10%; */
   padding-right: 0%;
+}
+h3 {
+  padding-right: 30px;
+}
+h4{
+  padding-right: 50px;
 }
